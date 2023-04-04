@@ -1,0 +1,40 @@
+.App {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  
+      &__logo {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #f44336;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+  
+        &:hover {
+          transform: rotate(5deg);
+        }
+      }
+    }
+  
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+  
+    &__footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+    }
+  }
+  
